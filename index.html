@@ -68,6 +68,7 @@
           <button
             type="button"
             class="after-header-btn after-header-btn-background btn"
+            data-modal-open
           >
             Заказать услугу
           </button>
@@ -113,28 +114,37 @@
           <h2 class="hero-title">Чем мы занимаемся</h2>
           <ul class="hero-list list">
             <li class="hero-item">
-              <img
-                src="./images/about-1.jpg"
-                alt="человек работает за компьютером"
-                width="370"
-                height="294"
-              />
+              <div class="hero-item-description">
+                <img
+                  src="./images/about-1.jpg"
+                  alt="человек работает за компьютером"
+                  width="370"
+                  height="294"
+                />
+                <h3 class="hero-description-text">Десктопные приложения</h3>
+              </div>
             </li>
             <li class="hero-item">
-              <img
-                src="./images/about-2.jpg"
-                alt="человек работает за ноутбуком"
-                width="370"
-                height="294"
-              />
+              <div class="hero-item-description">
+                <img
+                  src="./images/about-2.jpg"
+                  alt="человек работает за ноутбуком"
+                  width="370"
+                  height="294"
+                />
+                <h3 class="hero-description-text">Мобильные приложения</h3>
+              </div>
             </li>
             <li class="hero-item">
-              <img
-                src="./images/about-3.jpg"
-                alt="человек работает на планшете"
-                width="370"
-                height="294"
-              />
+              <div class="hero-item-description">
+                <img
+                  src="./images/about-3.jpg"
+                  alt="человек работает на планшете"
+                  width="370"
+                  height="294"
+                />
+                <h3 class="hero-description-text">Дизайнерские решения</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -433,5 +443,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg width="18" height="18">
+            <use href="./images/icons.svg#icon-modal-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
